@@ -3,6 +3,7 @@
 
 gris_oscuro = #333333
 gris_claro = #818181
+rojo = #BD255B
 a
 	text-decoration none
 body
@@ -10,6 +11,9 @@ body
 	font-size 16px
 figure
 	margin 0
+img
+	vertical-align top
+
 //buttons
 .button-menu
 	color gris_oscuro
@@ -21,6 +25,20 @@ figure
 .container
 	padding 1.4em
 	text-align center
+.action
+	color #FFFFFF
+	font-size 1.25em
+	margin-right 1em
+	&:last-child 
+		margin-right 0
+	&.gray
+		color gris_oscuro
+.actions
+	background rgba(black, .3)
+	bottom 0
+	left 0
+	position absolute
+	right 0		
 .border-bottom
 	border-bottom 1px solid gris_claro
 .name
@@ -31,6 +49,46 @@ figure
 	position relative	
 .author
 	color gris_claro
+.center-block
+	margin 0 auto
+.center-text
+	text-align center
+.right-tex
+	text-align  right
+.padding
+	padding 1em
+.padding-tb
+	padding 1em 0
+.progress
+	margin 1em 0
+	position relative
+	.min 
+	.max
+		font-size .8em
+		position absolute
+	.min		
+		left 0
+		top -4px
+	.max
+		right 0
+		top -4px
+	.total
+		background gris_claro
+		height 5px
+		margin 0 auto
+		width 75%
+	.state
+		background rojo
+		height 5px
+		width 30%
+	.circle
+		background gris_oscuro
+		border-radius 50%
+		height 10px
+		position absolute
+		right 0
+		top -2px
+		width 10px
 .header
 	// a 
 	// 	display none		
@@ -50,3 +108,8 @@ figure
 		margin-right 0
 	p
 		margin 0.5em 0
+		
+
+.playing 
+	&.small
+		width 20em
