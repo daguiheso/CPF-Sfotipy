@@ -59,6 +59,15 @@ img
 	padding 1em
 .padding-tb
 	padding 1em 0
+.left
+	float left
+.right
+	float right
+.wrap
+	width 1000px
+.round
+	border-radius 50%
+	overflow hidden
 .progress
 	margin 1em 0
 	position relative
@@ -132,5 +141,30 @@ img
 			width auto
 			
 
-
-
+@media screen and (min-width:1000px)	
+	.button-menu
+		display none
+	.header
+		height auto
+		.title
+			display none
+	.isotipo
+		width 122px
+	.logo
+		padding 1.3em 0
+		overflow:hidden
+	.avatar
+		width 38px
+		height 38px
+	.username
+		color gris_claro
+		line-height 2.5em
+		margin-left .8em
+		&:after
+			border-left 7px solid transparent
+			border-right 7px solid transparent			
+			border-top 9px solid gris_claro
+			content ""
+			display inline-block
+			margin-left .4em
+		
