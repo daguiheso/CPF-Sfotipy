@@ -3,6 +3,7 @@
 
 gris_oscuro = #333333
 gris_claro = #818181
+gris_mas_claro = #F0F0F0
 rojo = #BD255B
 a
 	text-decoration none
@@ -13,7 +14,9 @@ figure
 	margin 0
 img
 	vertical-align top
-
+ul
+	margin 0
+	padding 0
 //buttons
 .button-menu
 	color gris_oscuro
@@ -158,9 +161,27 @@ img
 			width auto
 			
 
-@media screen and (min-width:1000px)	
+@media screen and (min-width:1000px)
+	body
+		background gris_mas_claro	
 	.button-menu
 		display none
+	.menu
+		display block
+		overflow hidden
+		.item
+			float left
+			list-style none			
+			a 
+				color gris_oscuro
+				cursor pointer
+				display block
+				padding 1em
+				text-transform uppercase
+				border-top 5px solid transparent
+				&:hover
+					border-top 5px solid gris_oscuro
+
 	.header
 		height auto
 		.title
@@ -170,6 +191,7 @@ img
 	.logo
 		overflow:hidden
 		padding 1.3em 0
+		background white
 	.avatar
 		height 38px
 		width 38px
