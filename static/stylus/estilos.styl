@@ -147,10 +147,41 @@ ul
 	color gris_claro
 	right .5em
 	font-size 1.2em
+
 .playlist
+	border-left 1px solid gris_claro
 	display none
+	padding 0 2em
+	width 22em		
+	.list 
+		list-style none
+	.item
+		padding 1em 0
+	.action
+		font-size .8em
+		
+.isotipo
+	width 122px
 .logo
+	background white
 	display none
+	overflow:hidden
+	padding 1.3em 0
+.avatar
+	height 38px
+	width 38px
+.username
+	color #818181;
+	margin-left .5em
+	margin-top .7em		
+	&:after
+		border-left 7px solid transparent
+		border-right 7px solid transparent			
+		border-top 9px solid gris_claro
+		content ""
+		display inline-block
+		margin-left .4em
+			
 @media screen and (min-width:480px)	
 	.song
 		&:nth-child(even)
@@ -195,42 +226,15 @@ ul
 		float left
 		width 32.5em
 		.description
-			display none
-	.playlist
-		border-left 1px solid gris_claro
-		display block
-		padding 0 2em
-		width 22em		
-		.list 
-			list-style none
-		.item
-			padding 1em 0
-		.action
-			font-size .8em
+			display none	
 	.header
 		border none 
 		height auto
 		.title
 			display none
-	.isotipo
-		width 122px
+			
 	.logo
-		background white
+	.playlist
 		display block
-		overflow:hidden
-		padding 1.3em 0
-	.avatar
-		height 38px
-		width 38px
-	.username
-		color #818181;
-		margin-left .5em
-		margin-top .7em		
-		&:after
-			border-left 7px solid transparent
-			border-right 7px solid transparent			
-			border-top 9px solid gris_claro
-			content ""
-			display inline-block
-			margin-left .4em
+	
 		
