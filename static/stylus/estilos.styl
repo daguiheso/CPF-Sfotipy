@@ -2,13 +2,6 @@
 @import "normalize.styl"
 @import "fonts.styl"
 
-// animacion(parametro)
-// 	-webkit-animation parametro
-// 	-moz-animation parametro
-// 	-o-animation parametro
-// 	-ms-animation parametro
-	// animation parametro
-
 gris_oscuro = #333333
 gris_claro = #818181
 gris_mas_claro = #F0F0F0
@@ -103,7 +96,7 @@ ul
 		width 30%
 		border-radius 5px
 		position relative
-		animation 1s state infinite
+		animation 10s state infinite linear
 	.circle
 		background gris_oscuro
 		border-radius 50%
@@ -116,14 +109,15 @@ ul
 
 @keyframes state
 	from
-		background red
+		width 0
 	to
-		background blue
+		width 100%
 @keyframes circle
 	0%
 		transform scale(1)
 	100%
 		transform scale(2)
+		opacity 0
 .header
 	// a 
 	// 	display none		
